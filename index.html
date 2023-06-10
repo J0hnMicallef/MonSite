@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imgMonSite/iconHautDePage.png">
+</head>
+<body>
+    
+    <header>
+        <div class="H1Contener">
+            <h1>Mon Site</h1>
+        </div>
+        <div class="menu">
+            <div class="iconMenu"><strong id="txtIconMenu">Menu</strong></div>
+            <div id="btnMenuContener">
+                <button id="btn1Menu" onclick="fctAccueil()">Accueil</button>
+                <button id="btn2Menu" onclick="fctMonProfil()">Mon profil</button>
+                <button id="btn3Menu" onclick="fctAutre()">Autre</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="accueil">
+        <h2>Accueil</h2>
+        <div class="textAccueil">
+            <h3>Introduction</h3>
+            <p>Bonjour et bienvenue, voici un site qui contient  
+                des informations sur moi, on peut y voir  quelques projets,
+                 ce site a pour but de refaire ce que j'ai appris tous seuls 
+                 pour m'entraîner, à noter que je me concentre plus sur le contenu
+                  que sur le design</p>
+        </div>
+    </div>
+    
+    <div class="monProfil">
+        <h2>Mon Profil</h2>
+        <img src="./imgMonSite/IMG_2797.jpg" alt="Photos de moi" id="photosDeMoi">
+        <div class="text1MonProfil">
+            <h3>Profil</h3>
+            <p>Je m'appelle John j'ai 18 ans quand je crée ce site,
+                 j'adore coder, que ce soit pour faire des sites,
+                  des jeux ou encore pour faire des figures géométriques.
+                   Le codage, One Piece et le monocycle sont mes grandes
+                    passions.</p>
+        </div>
+
+        <div class="contenerImgPassion">
+            <img src="./imgMonSite/imgOP.jpg" alt="imgOP" id="imgOP">
+            <img src="./imgMonSite/imgMonocycle.jpg" alt="imgMonocycle" id="imgMonocycle">
+        </div>
+
+        <div class="diagrammeRadar">
+            <canvas id="radarCanvas" aria-label="chart" role="img"></canvas>
+        </div>
+    </div>
+
+    <div class="autre">
+        <h2>Autre</h2>
+        <div class="jeuLuffy">
+            <section>
+                <div class="jeu">
+        
+                    <div class="perso">
+                        <img src="./imgMonSite/imgLuffy.png" height="50px" alt="Luffy">
+                    </div>
+        
+                    <div class="obstacles"></div>
+                </div>
+            </section>
+        
+            <div class="control">
+                <button onclick="sauter()">SAUTER</button>
+                <button onclick="start()">Start</button>
+            </div>
+
+            <div class="contenerPyramide">
+                <div class="pyramid">
+                    <div class="glow"></div>
+                    <div>
+                        <span style="--i:0;"></span>
+                        <span style="--i:1;"></span>
+                        <span style="--i:2;"></span>
+                        <span style="--i:3;"></span>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
